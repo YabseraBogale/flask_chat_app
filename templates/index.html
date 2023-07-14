@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Chatting form</h1>
+        <form action= http://127.0.0.1:5000 method="post">
+            <input type="text" name="user_post" id="comment">
+            <input type="submit" value="comment" class="btn" >
+            <button id="btn">📎 attachement</button>
+            <input class="file" type="file" name="user_file" id="file">
+            
+        </form>
+        <div class="Post">
+            <h2>POST</h2>
+                {{post_type}}
+                {% for i in post %}
+                    <p class="post">{{i}}</p>
+                {% endfor %}
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='app.js')}}"></script>
+</body>
+</html>

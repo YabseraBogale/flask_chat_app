@@ -1,0 +1,48 @@
+*{
+    padding:5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn{
+
+    background-color: black;
+    color:white;
+    font-size: medium;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.main{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button{
+
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    border-radius: 5px;;
+
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+}
+
+.file{
+    display:none;
+}
+.btn:hover{
+
+    background-color: white;
+    color:black;
+
+}
+
+p{
+    border: 2px solid black;
+    border-radius: 5px;
+   
+}
