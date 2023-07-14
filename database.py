@@ -1,5 +1,5 @@
 import sqlite3
-
+import time
 
 class UserPost():
     def creatDatabase(self):
@@ -10,8 +10,8 @@ class UserPost():
         self.pointer.execute(table)
         self.curosr.commit()
 
-    def userPost(self,post,time):
-        self.pointer.execute("insert into userPostTable(user_post_text,user_post_time) values(?,?)",(post,time,))
+    def userPost(self,post,t=time.asctime()):
+        self.pointer.execute("insert into userPostTable(user_post_text,user_post_time) values(?,?)",(post,t,))
         self.curosr.commit()
 
     def seeUserPost(self):
